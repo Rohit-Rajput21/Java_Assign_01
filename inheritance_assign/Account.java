@@ -2,7 +2,8 @@ public class Account{
     private int accountNumber;
     private String name;
     private String address;
-    private int phoneNumber;
+	private String dob;
+	private long phoneNumber;
     private int balance;
 	public void setAccountNumber(int accountNumber){
 		this.accountNumber=accountNumber;
@@ -22,10 +23,17 @@ public class Account{
 	public String getAddress(){
 		return address;
 	}
-	public void setPhoneNumber(int phoneNumber){
+	public String setDob(String dob){
+	public String setDob(String dob){
+		this.dob=dob;
+	}
+	public String getDob(){
+		return dob;
+	}
+	public void setPhoneNumber(long phoneNumber){
 		this.phoneNumber=phoneNumber;
 	}
-	public int getPhoneNumber(){
+	public long getPhoneNumber(){
 		return phoneNumber;
 	}
 	public void setBalance(int balance){
