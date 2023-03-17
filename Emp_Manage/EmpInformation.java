@@ -3,9 +3,13 @@ import java.io.FileWriter;
 import java.io.IOException;
 import java.io.BufferedReader;
 import java.io.FileInputStream;
+import java.io.FileOutputStream;
 import java.io.FileReader;
+import java.io.File;
 public class EmpInformation{
 	Scanner sc;
+	FileInputStream in=null;
+	FileOutputStream out=null;
 	private int id;
 	private String name;
 	private String mobileNo;
@@ -82,6 +86,26 @@ public class EmpInformation{
 		catch(IOException e){
 			System.out.println(e);
 		}
+	}
+	public void copyContent(String a,String b){
+		try{
+			File x=new File(a);
+			File y=new File(b);
+			in=new FileInputStream(x);
+		    out=new FileOutputStream(y);
+			int ch;
+			while((ch=in.read())!=-1){
+				out.write(ch);
+			}
+			in.close();
+			out.close();
+			System.out.println("Content copied ....");
+			
+		}
+		catch(IOException e){
+			System.out.println(e);
+		}
+	
 	}
 	public String toString(){
 		return "Id= "+getId()+" Name="+getName()+" MobileNo="+getMobileNo()+" dob="+getDob();
