@@ -1,0 +1,2 @@
+Hello guys,
+This tutorial for explaining the concept of resource allocation with try block which is introduced in java 1.7
