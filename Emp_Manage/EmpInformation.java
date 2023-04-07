@@ -4,6 +4,7 @@ import java.io.IOException;
 import java.io.BufferedReader;
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
+import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.File;
 public class EmpInformation{
@@ -71,7 +72,8 @@ public class EmpInformation{
 	    }
         catch(IOException e){
 			System.out.println(e);
-		}		
+		}
+      		
 	}
 	public void read(){
 		try{
@@ -105,6 +107,7 @@ public class EmpInformation{
 		catch(IOException e){
 			System.out.println(e);
 		}
+		
 	
 	}
 	public String toString(){

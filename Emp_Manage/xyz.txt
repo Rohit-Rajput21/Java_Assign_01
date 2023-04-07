@@ -1,4 +1,0 @@
-Id= 101 Name=rohit MobileNo=123 dob=123
-Id= 102 Name=sita MobileNo=1234 dob=1234
-Id= 103 Name=raman MobileNo=1234 dob=12334
-Id= 101 Name=rohit MobileNo=1234 dob=1234
